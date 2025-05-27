@@ -1,0 +1,118 @@
+@font-face{
+    font-family: 'Bender';
+    src: url('font/Bender.woff') format('woff'),
+        url('font/Bender-Bold.woff') format('woff'),
+        url('font/Neusa-DemiBold.woff') format('woff');
+    font-weight: normal;
+    font-size: normal;
+    font-display: normal;
+}
+h1{
+    padding-top: 1%;
+    padding-bottom: 10px;
+    text-align: left;
+    color: white;
+    font-family: 'Bender' ;
+}
+h2{
+    color: wheat;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: 'Bender' ;
+}
+#h2hp{
+    color: white;
+    font-family: 'Bender' ;
+}
+#eqp{
+    padding-bottom: 10px;
+}
+body{
+    background-color: rgba(24,24,24,255);
+}
+ul{
+    padding-left: 5%;
+}
+#hp{
+    color: white;
+}
+#itog{
+    color: red
+}
+#cers{
+    padding: 8px 12px;
+}
+#amo{
+    align-self: center;
+}
+header{
+    height: 100px;
+    color: black;
+    background: url(png/logo.png) 10% 0 no-repeat ;
+}
+#main2 {
+    font-family: 'Bender' ;
+    /*background:  no-repeat, rgba(24,24,24,255);*/ 
+    margin-top: 20px;
+    background-color: black ;
+    background: url(png/tagila.png) no-repeat 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;
+}
+
+p1{
+    color: white;
+}
+p{
+    color: wheat;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+table{
+    color: wheat;
+}
+li{
+    color: wheat;
+}
+th{
+    color: white;
+}
+footer{
+    align-self: flex-end;
+    font-family: 'Bender' ;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.colomn{
+    padding-right: 5%;
+    padding-top: 50px;
+}
+table{
+    border-collapse: collapse;
+}
+#bs_logo{
+    padding-left: 8%;
+}
+button{
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Bender' ;
+    padding: 10px 20px;
+}
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    align-content: stretch;
+}   
+

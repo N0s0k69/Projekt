@@ -1,0 +1,62 @@
+h1{
+    color: blue;
+}
+h2{
+    color: darkmagenta;
+    font-family: "Courier New";
+}
+p1{
+    text-align: center;
+    font-family:arial;
+    
+}
+div { 
+    width: 500px;
+    text-align: justify;
+    font-size: 18px;
+}
+#table2{
+    height: 100px;
+    width:400px;
+    border-color: black;
+
+}
+#BLACK{
+    border-style:solid;
+    font-size: 18px;
+    text-align: center;
+    background-color:white ;
+    font-family: 'Times New Roman', Times, serif;
+}
+#WIHTE{
+    font-size: 18px;
+    text-align: center;
+    border-style:solid;
+    border-color: black;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+#tr1{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    
+}
+#tr2{
+    background-color:rgb(243, 212, 172);
+}
+#tr3{
+    background-color:rgb(155, 252, 255) ;
+}
+#tr4{
+    background-color:rgb(243, 212, 172);
+}
+#tr5{
+    background-color:rgb(155, 252, 255) ;
+}
+#table{
+    text-align: left;
+    width: 500px;
+    height: 150px;
+}
