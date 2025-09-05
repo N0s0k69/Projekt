@@ -1,3 +1,21 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "folder-color.pathColors": [
+        {
+            "folderPath": "Projekt\\web\\js osn\\FuncDom\\",
+            "color": "foldercolorizer.color_00ccff",
+            "isFolderOnly": true
+        },
+        {
+            "folderPath": "Projekt\\web\\js osn\\",
+            "color": "foldercolorizer.color_ff0000",
+            "isFolderOnly": true
+        },
+        {
+            "folderPath": "Projekt\\web\\js osn\\FuncDom\\"
+        },
+        {
+            "folderPath": "Projekt\\web\\js osn\\"
+        }
+    ]
 }
