@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+		<meta charset="utf-8">
+		<title>Интернет-магазин</title>
+	</head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Интернет-магазин</h1>
+                <p>Товары с фейкового API</p>
+            </header>
+
+            <div class="controls">
+                <button id="loadProducts">Загрузить товары</button>
+                <button id="clearProducts">Очистить</button>
+                <div class="loading" id="loadingIndicator" style="display: none;">
+                    Загрузка товаров...
+                </div>
+            </div>
+
+            <div id="productsContainer" class="products-grid">
+                <!-- Карточки товаров будут добавляться здесь -->
+            </div>
+
+            <div id="errorMessage" class="error-message" style="display: none;">
+                <!-- Сообщения об ошибках -->
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
