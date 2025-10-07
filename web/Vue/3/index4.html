@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Положительные элементы массива Vue 3</title>
+</head>
+<body>
+    <div id="app">
+        <!-- Способ 1: Использование computed свойства для фильтрации -->
+        <div v-for="item in positiveItems" :key="item">
+            {{ item }}
+        </div>
+        
+        
+            </div>
+        </template>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+        const { createApp } = Vue;
+        createApp({
+            data() {
+                return {
+                    items: [1, -2, 3, -4, 5],
+                }
+            },
+            computed: {
+                // Лучший способ - использовать computed свойство
+                positiveItems() {
+                    return this.items.filter(item => item > 0);
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

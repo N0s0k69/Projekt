@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой компонент на Vue 3</title>
+    <style>
+        .wrapper {
+            padding: 20px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: rgb(230, 42, 230);
+            text-align: center;
+        }
+        p {
+            color: gray;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="wrapper">
+            <h1><em>Невероятный ретро вейв</em></h1>
+            <p>Это пример стилизованного компонента.</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+        const { createApp } = Vue;
+        createApp({}).mount('#app');
+    </script>
+</body>
+</html>

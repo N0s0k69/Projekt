@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <p v-if="visible">Первый абзац виден, когда visible = true.</p>
+        <p v-else>Второй абзац виден, когда visible = false.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+    new Vue({
+        el: '#app',
+        data: {
+            visible: false
+        }
+    })
+</script>
+
+</body>
+</html>
+
+

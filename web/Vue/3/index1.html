@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Квадраты элементов массива Vue 3</title>
+</head>
+<body>
+    <div id="app">
+        <div v-for="item in items" :key="item">
+            {{ item * item }}
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+        const { createApp } = Vue;
+        createApp({
+            data() {
+                return {
+                    items: [1, 2, 3, 4, 5],
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

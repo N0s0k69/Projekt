@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Изучаем Vue 3</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div id="app">
+		<p>
+			Цена продукта: 
+			<input type="number" v-model.number="cost" min="0">
+		</p>
+		<p>
+			Количество: 
+			<input type="number" v-model.number="amount" min="0">
+		</p>
+		<p>Полная стоимость: {{ price }}</p>
+	</div>
+	<script src="https://unpkg.com/vue"></script>
+	<script>
+		Vue.createApp({
+			data() {
+				return {
+					cost: 0,
+					amount: 0
+				}
+			},
+			computed: {
+				price() {
+					return this.cost * this.amount;
+				}
+			}
+		}).mount('#app');
+	</script>
+</body>
+</html> 

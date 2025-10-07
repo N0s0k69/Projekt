@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Динамические классы через объект Vue 3</title>
+    <style>
+        .active {
+            color: #fff;
+            background: #a259e6;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .valid {
+            border: 2px solid #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <p :class="classObject">
+            Это абзац с динамическими классами через объект.<br>
+            <strong>active: true, valid: false</strong>
+        </p>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+        const { createApp } = Vue;
+        createApp({
+            data() {
+                return {
+                    classObject: { active: true, valid: true }
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

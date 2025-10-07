@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Скрыть элемент по кнопке Vue 3</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .box {
+            padding: 20px;
+            background: #f3e6ff;
+            border: 2px solid #a259e6;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        p {
+            color: rgb(255, 83, 255);
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="box" v-if="visible">
+            <p> <em>Невероятный ретро вейв</em> </p>
+        </div>
+        <button @click="visible = false">Спрятать элемент</button>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+        const { createApp } = Vue;
+        createApp({
+            data() {
+                return {
+                    visible: true
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

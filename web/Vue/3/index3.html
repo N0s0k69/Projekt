@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>30 абзацев с числами Vue 3</title>
+</head>
+<body>
+    <div id="app">
+        <p v-for="n in 30" :key="n">{{ n }}</p>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+        const { createApp } = Vue;
+        createApp({}).mount('#app');
+    </script>
+</body>
+</html>

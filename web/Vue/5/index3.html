@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Показать/скрыть абзац через v-if</title>
+</head>
+<body>
+    <div id="app">
+        <input type="checkbox" v-model="checked" id="showParagraph">
+        <label for="showParagraph">Показать абзац</label>
+        <p v-if="checked">Этот абзац виден только если чекбокс отмечен.</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                checked: false
+            }
+        });
+    </script>
+</body>
+</html>

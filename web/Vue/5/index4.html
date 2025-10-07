@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор города</title>
+</head>
+<body>
+    <div id="app">
+        <label for="city">В каком городе вы живете?</label>
+        <select v-model="selectedCity" id="city">
+            <option disabled value="">Выберите город</option>
+            <option>Москва</option>
+            <option>Санкт-Петербург</option>
+            <option>Новосибирск</option>
+            <option>Екатеринбург</option>
+            <option>Казань</option>
+        </select>
+        <p v-if="selectedCity">Вы выбрали: {{ selectedCity }}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                selectedCity: ''
+            }
+        });
+    </script>
+</body>
+</html>

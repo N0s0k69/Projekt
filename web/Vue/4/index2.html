@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Абзац с динамическими CSS классами Vue 3</title>
+    <style>
+        .highlight {
+            background-color: rgb(247, 0, 255);
+        }
+        .big {
+            font-size: 24px;
+        }
+        .italic {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <p :class="cssClasses">Это абзац с динамическими CSS классами. Невероятный ретро вейв</p>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+        const { createApp } = Vue;
+        createApp({
+            data() {
+                return {
+                    cssClasses: ['highlight', 'big', 'italic']
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

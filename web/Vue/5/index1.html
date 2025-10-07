@@ -1,0 +1,13 @@
+<div id="app">
+<input type="number" v-model.number="num" placeholder="Введите число">
+  <p>Квадрат: {{ num * num }}</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script>
+new Vue({
+    el: '#app',
+    data: {
+    num: 0
+    }
+});
+</script>

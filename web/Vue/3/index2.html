@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Ключи массива Vue 3</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="(value, key) in arr" :key="key">{{ key }}</li>
+        </ul>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+        const { createApp } = Vue;
+        createApp({
+            data() {
+                return {
+                    arr: ['x', 'y', 'z','f'],
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

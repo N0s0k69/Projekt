@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Поменять местами значения инпутов на Vue</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="text1" placeholder="Первый текст">
+        <input type="text" v-model="text2" placeholder="Второй текст">
+        <button @click="swapTexts">Поменять местами</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                text1: '',
+                text2: ''
+            },
+            methods: {
+                swapTexts() {
+                    const temp = this.text1;
+                    this.text1 = this.text2;
+                    this.text2 = temp;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

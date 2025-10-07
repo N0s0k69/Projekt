@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тоггл абзацев с Vue</title>
+</head>
+<body>
+    <div id="app">
+        <p v-if="visible1">Это первый абзац. Его можно показать или скрыть первой кнопкой.</p>
+        <button @click="visible1 = !visible1">Показать/Скрыть первый абзац</button>
+        <br><br>
+        <p v-if="visible2">Это второй абзац. Его можно показать или скрыть второй кнопкой.</p>
+        <button @click="visible2 = !visible2">Показать/Скрыть второй абзац</button>
+        <br><br>
+        <p v-if="visible3">Это третий абзац. Его можно показать или скрыть третьей кнопкой.</p>
+        <button @click="visible3 = !visible3">Показать/Скрыть третий абзац</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                visible1: false,
+                visible2: false,
+                visible3: false
+            }
+        });
+    </script>
+</body>
+</html>

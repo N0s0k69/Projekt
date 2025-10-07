@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Изучаем Vue 3</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div id="app">
+		
+        <button @click="showCurrentDate">Показать текущую дату</button>
+		<input type="number" v-model.number="inputNumber" min="0" max="6" >
+        <button @click="showDayOfWeek">Показать день недели</button>
+        <p v-if="dayOfWeek !== ''">День недели: {{ dayOfWeek }}</p>
+        <br>
+        <button @click="showSquare(inputNumber)">Показать квадрат числа</button>
+	</div>
+	<script src="https://unpkg.com/vue"></script>
+	<script>
+		Vue.createApp({
+			data() {
+				return {
+					inputNumber: null,
+					dayOfWeek: ''
+				}
+			},
+			methods: {
+				showCurrentDate() {
+					alert(new Date().toLocaleString());
+				},
+				getDayOfWeek(num) {
+					const days = ['',
+						'Понедельник',
+						'Вторник',
+						'Среда',
+						'Четверг',
+						'Пятница',
+						'Суббота',
+						'Воскресенье'
+					];
+					if (typeof num === 'number' && num >= 0 && num <= 7) {
+						return days[num];
+					} else {
+						return 'Некорректное число';
+					}
+				},
+				showDayOfWeek() {
+					this.dayOfWeek = this.getDayOfWeek(this.inputNumber);
+				},
+				showSquare(num) {
+					alert(num * num);
+				}
+			}
+		}).mount('#app');
+	</script>
+</body>
+</html> 

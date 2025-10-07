@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>День недели с Vue</title>
+</head>
+<body>
+    <div id="app">
+        <p v-if="day === 'Понедельник'">Понедельник</p>
+        <p v-if="day === 'Вторник'">Вторник</p>
+        <p v-if="day === 'Среда'">Среда</p>
+        <p v-if="day === 'Четверг'">Четверг</p>
+        <p v-if="day === 'Пятница'">Пятница</p>
+        <p v-if="day === 'Суббота'">Суббота</p>
+        <p v-if="day === 'Воскресенье'">Воскресенье</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        const days = [
+            'Воскресенье',
+            'Понедельник',
+            'Вторник',
+            'Среда',
+            'Четверг',
+            'Пятница',
+            'Суббота'
+        ];
+        const today = new Date().getDay();
+        new Vue({
+            el: '#app',
+            data: {
+                day: days[today]
+            }
+        });
+    </script>
+</body>
+</html>
